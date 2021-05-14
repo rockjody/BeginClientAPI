@@ -12,5 +12,25 @@ namespace BeginClientAPI.BusinessLogic
         {
             return 1;
         }
+
+        public static int WriteApplicant(Applicant[] applicant)
+        {
+            try
+            {
+                // System.Threading.Tasks.Task<HttpResponseMessage> response;
+                // var contentString = response.Result.Content.ReadAsStringAsync().Result;
+
+            }
+            catch
+            {
+
+            }
+            finally
+            {
+
+            }
+            
+            return 1;
+        }
     }
 }

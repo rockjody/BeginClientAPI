@@ -25,30 +25,58 @@ namespace BeginClientAPI.Controllers
         }
 
         // POST api/<controller>
-        public object Post([FromBody] LoanOriginationInfo[] loanOriginationInfo)
+        //public object Post([FromBody] LoanOriginationInfo[] loanOriginationInfo)
+        //{
+        //    var errors = Validation.LoanOriginationInfo(loanOriginationInfo);
+        //    if (errors.Count == 0)
+        //    {
+        //        var dataResult = DataAccess.WriteLoanOriginationInfo(loanOriginationInfo);
+        //        if (dataResult == 1)
+        //        {
+        //            return HttpStatusCode.OK;
+        //        }
+        //        else
+        //        {
+        //            // ToDo: discuss with team
+        //            return HttpStatusCode.NotAcceptable;
+        //        }
+        //    }
+        //    else
+        //        // ToDo: discuss
+        //        return Request.CreateResponse(HttpStatusCode.BadRequest,
+        //            new
+        //            {
+        //                Errors = errors
+        //            });
+        //}
+
+        public object Post([FromBody] Applicant[] applicant)
         {
-            var errors = Validation.LoanOriginationInfo(loanOriginationInfo);
+            var errors = Validation.Applicant(applicant);
             if (errors.Count == 0)
             {
-                var dataResult = DataAccess.WriteLoanOriginationInfo(loanOriginationInfo);
+                var dataResult = DataAccess.WriteApplicant(applicant);
                 if (dataResult == 1)
                 {
+
+
                     return HttpStatusCode.OK;
                 }
                 else
                 {
-                    // ToDo: discuss with team
+                    // ToDo: discuss with team, best code to use
                     return HttpStatusCode.NotAcceptable;
                 }
             }
             else
-                // ToDo: discuss
+                // ToDo: discuss best code to use
                 return Request.CreateResponse(HttpStatusCode.BadRequest,
                     new
                     {
                         Errors = errors
                     });
         }
+
 
         // PUT api/<controller>/5
         public void Put(int id, [FromBody] string value)

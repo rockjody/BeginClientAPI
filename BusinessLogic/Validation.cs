@@ -20,5 +20,18 @@ namespace BeginClientAPI.BusinessLogic
 
             return result;
         }
+
+        public static Dictionary<int, string> Applicant(Applicant[] applicant)
+        {
+            var result = new Dictionary<int, string>();
+
+            if (applicant.Count(m => m.SortOrder == 1) > 1)
+                result.Add(1, "More than one applicant");
+
+            if (applicant.Count(m => m.FirstName == "JimBob") > 0)
+                result.Add(2, "We do not accept applicants named JimBob");
+
+            return result;
+        }
     }
 }
