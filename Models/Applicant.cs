@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace BeginClientAPI.Models
+namespace TIC.ClientAPI.Models
 {
     public class Applicant
     {
@@ -86,6 +86,5 @@ namespace BeginClientAPI.Models
         public string SellerState;
         public int SellerZip;
         // public decimal Balance;
-
     }
 }

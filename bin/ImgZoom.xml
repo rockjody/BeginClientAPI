@@ -1,0 +1,232 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ImgZoom</name>
+    </assembly>
+    <members>
+        <member name="T:ImgZoom.ImgZoom">
+            <summary>
+            Summary description for UserControl1.
+            </summary>
+        </member>
+        <member name="M:ImgZoom.ImgZoom.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:ImgZoom.ImgZoom.#ctor(ImgZoom.State)">
+            <summary>
+            Starts the control with the information contained in the state parameter.
+            </summary>
+            <param name="startState">The state the image viewer should be started with.</param>
+        </member>
+        <member name="M:ImgZoom.ImgZoom.PrintImage(System.String)">
+            <summary>
+            Prints the image stored in the file specified.
+            </summary>
+            <param name="fileName">The path pointing to the file to be printed.</param>
+        </member>
+        <member name="M:ImgZoom.ImgZoom.PrintImage">
+            <summary>
+            Prints the current image (requires the CurrentFileName property is set).
+            </summary>
+        </member>
+        <member name="M:ImgZoom.ImgZoom.SaveAs">
+            <summary>
+            Shows a dialog box used to save the image.
+            </summary>
+        </member>
+        <member name="M:ImgZoom.ImgZoom.DrawImage">
+            <summary>
+            Draw the image in the existing state.  Instead of throwing an error, this method will handle the
+            error and return a boolean indicating the redraw was successful.
+            </summary>
+            <returns>A value indicating the new values were valid.</returns>
+        </member>
+        <member name="M:ImgZoom.ImgZoom.FitHorizontal">
+            <summary>
+            Fits it horizontally
+            </summary>
+        </member>
+        <member name="M:ImgZoom.ImgZoom.FitAll">
+            <summary>
+            Makes the document take up as much space as possible without requiring scroll bars.
+            </summary>
+        </member>
+        <member name="M:ImgZoom.ImgZoom.LoadImage(System.Drawing.Image)">
+            <summary>
+            Load an image into the image viewer.
+            </summary>
+            <param name="img">The raw image to load.</param>
+        </member>
+        <member name="M:ImgZoom.ImgZoom.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:ImgZoom.ImgZoom.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:ImgZoom.ImgZoom.Cleanup">
+            <summary>
+            Cleanup the image viewer.
+            </summary>
+        </member>
+        <member name="M:ImgZoom.ImgZoom.ImageMoveSpecific(System.Int32)">
+            <summary>
+            Sets the page to be a specific page number.
+            </summary>
+            <param name="pageNumber">The page number to set.</param>
+        </member>
+        <member name="M:ImgZoom.ImgZoom.ImageMoveFirst">
+            <summary>
+            Changes the page to the first page in the document.
+            </summary>
+        </member>
+        <member name="M:ImgZoom.ImgZoom.ImageMoveLast">
+            <summary>
+            Changes the page to the last page in the document.
+            </summary>
+        </member>
+        <member name="M:ImgZoom.ImgZoom.ImageMovePrev">
+            <summary>
+            Changes the page to the previous page in the document.
+            </summary>
+        </member>
+        <member name="M:ImgZoom.ImgZoom.ImageMoveNext">
+            <summary>
+            Changes the page to the next page in the document.
+            </summary>
+        </member>
+        <member name="M:ImgZoom.ImgZoom.ImageMovePrevious">
+            <summary>
+            Moves to the previous image
+            </summary>
+        </member>
+        <member name="P:ImgZoom.ImgZoom.CurrentFileName">
+            <summary>
+            Sets the file name of the image displayed in the control.
+            </summary>
+        </member>
+        <member name="P:ImgZoom.ImgZoom.ImageState">
+            <summary>
+            Gets or sets the state of the control.  The Set will automatically change the control
+            to the state that is passed in.
+            </summary>
+        </member>
+        <member name="T:ImgZoom.PageChangeEventArgs">
+            <summary>
+            Summary description for PageChangeEventArgs.
+            </summary>
+        </member>
+        <member name="T:ImgZoom.PrinterSelect">
+            <summary>
+            Summary description for PrinterSelect.
+            </summary>
+        </member>
+        <member name="F:ImgZoom.PrinterSelect.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ImgZoom.PrinterSelect.GetSelectedPrinter">
+            <summary>
+            Retrieves the name of the printer selected in the drop-down list.
+            </summary>
+            <returns>A string with the name of the printer.</returns>
+        </member>
+        <member name="M:ImgZoom.PrinterSelect.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:ImgZoom.PrinterSelect.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:ImgZoom.PageRotationEventArgs">
+            <summary>
+            Summary description for PageRotationEventArgs.
+            </summary>
+        </member>
+        <member name="P:ImgZoom.PageRotationEventArgs.RotationType">
+            <summary>
+            The actual rotate/flip type.
+            </summary>
+        </member>
+        <member name="P:ImgZoom.PageRotationEventArgs.Angle">
+            <summary>
+            The angle the item was rotated.
+            </summary>
+        </member>
+        <member name="P:ImgZoom.PageRotationEventArgs.PageNumber">
+            <summary>
+            The page that was rotated
+            </summary>
+        </member>
+        <member name="T:ImgZoom.State">
+            <summary>
+            This object contains the state of the ImgZoom control.
+            </summary>
+        </member>
+        <member name="M:ImgZoom.State.#ctor">
+            <summary>
+            Default Constructor
+            </summary>
+        </member>
+        <member name="M:ImgZoom.State.GetActiveFrame(System.Int32)">
+            <summary>
+            Gets the active frame or the active image.
+            </summary>
+            <param name="pageNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ImgZoom.State.ResetSplit">
+            <summary>
+            Resets the split.
+            </summary>
+        </member>
+        <member name="M:ImgZoom.State.SplitImages">
+            <summary>
+            Splits images
+            </summary>
+        </member>
+        <member name="P:ImgZoom.State.PreviousZoomFactor">
+            <summary>
+            The previous zoom factor in case the existing one doesn't work.
+            </summary>
+        </member>
+        <member name="P:ImgZoom.State.ZoomFactor">
+            <summary>
+            The Zoom factor of the image.
+            </summary>
+        </member>
+        <member name="P:ImgZoom.State.CurrentPage">
+            <summary>
+            The current page the image is on.  This only applies to a multipage TIF image.  If
+            it is a different type, this will always be 1.
+            </summary>
+        </member>
+        <member name="P:ImgZoom.State.NumPages">
+            <summary>
+            The number of pages in the image.  This only applies to a multipage TIF image.  If
+            it is a different type, this will always be 1.
+            </summary>
+        </member>
+        <member name="P:ImgZoom.State.FrameDimension">
+            <summary>
+            The active FrameDimension object that indicates what the current page is.
+            </summary>
+        </member>
+        <member name="P:ImgZoom.State.Image">
+            <summary>
+            The raw image.
+            </summary>
+        </member>
+    </members>
+</doc>

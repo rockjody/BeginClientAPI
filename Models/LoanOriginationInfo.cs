@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BeginClientAPI.Models
+namespace TIC.ClientAPI.Models
 {
     public class LoanOriginationInfo
     {

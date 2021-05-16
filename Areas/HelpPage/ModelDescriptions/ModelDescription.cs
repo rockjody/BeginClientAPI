@@ -1,6 +1,6 @@
 using System;
 
-namespace BeginClientAPI.Areas.HelpPage.ModelDescriptions
+namespace TIC.ClientAPI.Areas.HelpPage.ModelDescriptions
 {
     /// <summary>
     /// Describes a type model.

@@ -1,7 +1,7 @@
 using System;
 using System.Reflection;
 
-namespace BeginClientAPI.Areas.HelpPage.ModelDescriptions
+namespace TIC.ClientAPI.Areas.HelpPage.ModelDescriptions
 {
     public interface IModelDocumentationProvider
     {

@@ -1,10 +1,10 @@
 using System;
 using System.Web.Http;
 using System.Web.Mvc;
-using BeginClientAPI.Areas.HelpPage.ModelDescriptions;
-using BeginClientAPI.Areas.HelpPage.Models;
+using TIC.ClientAPI.Areas.HelpPage.ModelDescriptions;
+using TIC.ClientAPI.Areas.HelpPage.Models;
 
-namespace BeginClientAPI.Areas.HelpPage.Controllers
+namespace TIC.ClientAPI.Areas.HelpPage.Controllers
 {
     /// <summary>
     /// The controller that will handle requests for the help page.

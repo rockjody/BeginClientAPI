@@ -78,8 +78,8 @@ C:\Users\jkrock\source\repos\BeginClientAPI\bin\System.Web.WebPages.Deployment.x
 C:\Users\jkrock\source\repos\BeginClientAPI\bin\System.Web.WebPages.Razor.xml
 C:\Users\jkrock\source\repos\BeginClientAPI\bin\Antlr3.Runtime.pdb
 C:\Users\jkrock\source\repos\BeginClientAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\jkrock\source\repos\BeginClientAPI\obj\Debug\BeginClientAPI.csprojAssemblyReference.cache
 C:\Users\jkrock\source\repos\BeginClientAPI\obj\Debug\BeginClientAPI.csproj.CoreCompileInputs.cache
 C:\Users\jkrock\source\repos\BeginClientAPI\obj\Debug\BeginClientAPI.csproj.CopyComplete
 C:\Users\jkrock\source\repos\BeginClientAPI\obj\Debug\BeginClientAPI.dll
 C:\Users\jkrock\source\repos\BeginClientAPI\obj\Debug\BeginClientAPI.pdb
+C:\Users\jkrock\source\repos\BeginClientAPI\obj\Debug\BeginClientAPI.csprojAssemblyReference.cache

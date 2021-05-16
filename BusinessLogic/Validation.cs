@@ -1,10 +1,10 @@
-﻿using BeginClientAPI.Models;
+﻿using TIC.ClientAPI.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace BeginClientAPI.BusinessLogic
+namespace TIC.ClientAPI.BusinessLogic
 {
     public static class Validation
     {

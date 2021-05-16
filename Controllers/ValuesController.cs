@@ -5,7 +5,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 
-namespace BeginClientAPI.Controllers
+namespace TIC.ClientAPI.Controllers
 {
     public class ValuesController : ApiController
     {
